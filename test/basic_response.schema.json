@@ -1,0 +1,41 @@
+{
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+        "string",
+        "number",
+        "boolean",
+        "null",
+        "array"
+    ],
+    "properties": {
+        "string": {
+            "type": "string"
+        },
+        "number": {
+            "type": "number"
+        },
+        "boolean": {
+            "type": "boolean"
+        },
+        "null": {
+            "type": "null"
+        },
+        "array": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                    "id"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "number"
+                    }
+                }
+            }
+        }
+    }
+}

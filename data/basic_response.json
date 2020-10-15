@@ -1,0 +1,14 @@
+{
+    "string": "string",
+    "number": 1,
+    "boolean": true,
+    "null": null,
+    "array": [
+        {
+            "id": 0
+        },
+        {
+            "id": 1
+        }
+    ]
+}
